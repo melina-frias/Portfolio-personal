@@ -10,28 +10,63 @@
     <title>Portfolio Frias Melina</title>
 </head>
 <body>
-    <header></header>
+    
+    <header> <!-- Comienza header  -->
+        <div class="header-padre container">
+            <div class="columns is-vcentered padre-header">
+                <a class="logo column is-2 is-half-tablet is-half-mobile" href="#inicio"><h1 class="logo">Melina</h1></a>
+                
+                <nav class="menuNav active column is-9-desktop is-9-tablet" id="menuCompleto">
+                    <!-- menuNav-visible -->
+                    <a href="#inicio">Inicio</a>
+                    <a href="#acercade">Acerca de</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#resumen">Resumen</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+                <div class="iconos-redes column"> <!--Div de redes sociales  -->
+                    <a href="https://www.facebook.com/Melina.L.Frias/" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/melina-frias/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/melfrias98/" target="_blank"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="icon nav-icon-5 hamburguesa">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+            </div>
+        </div>
+        
+
+    </header>  <!--Termina header  -->
     <main>
         <div class="contenedor-padre">
             
-            <!-- <section id="inicio" class="hero is-fullheight inicio"> Empieza Seccion 1  -->
-                <!-- <div class="container contenedor">
-                    <div class="column is-7 texto">
-                        <h1 class="titulo">Hola, soy freelancer</h1>
-                        <h1 class="developer">Developer</h1>
-                        <p>establecida en Buenos Aires, Argentina.</p>
-                        <button class="mis-trabajos"><a href="#portfolio">Ver mis trabajos</a></button>
-                        <a class="contactame" href="#contacto">Contactame <i class="bi bi-arrow-down-circle"></i></a>
-                    </div>
-                    <div class="column imagen">
-                        <img class="img-perfil" src="assets/imagenes/foto-personal.jpg" alt="Foto-personal">
+            <section id="inicio" class="section is-medium inicio"> <!-- Empieza Seccion 1  -->
+                <div class="container">
+                    <div class="contenedor-texto-img columns">
+                        <div class="column is-7 texto">
+                            <h1 class="titulo">Hola, soy freelancer</h1>
+                            <h1 class="developer">Developer</h1>
+                            <p>establecida en Buenos Aires, Argentina.</p>
+                            <button class="mis-trabajos"><a href="#portfolio">Ver mis trabajos</a></button>
+                            <a class="contactame" href="#contacto">Contactame <i class="bi bi-arrow-down-circle"></i></a>
+                        </div>
+                        <div class="medio column is-1"></div>
+                        <div class="imagen column is-4-desktop is-full-mobile">
+                            <img class="img-perfil is-rounded" src="assets/imagenes/foto-personal.jpg" alt="Foto-personal">
+                        </div>
+                        
+                        
+                        
                     </div>
                 </div>
                 
                 
-            </section> Termina seccion 1  -->
+                </section>  <!-- Termina seccion 1 -->
 
-            <section id="acercade" class="acerca-de"> <!-- Empieza seccion 2 -->
+            <section id="acercade" class="section acerca-de"> <!-- Empieza seccion 2 -->
                 <div class="container contenedor-gral" >
                     <div class="nombre-seccion"> <!--Titulo-->
                         <p>Acerca de mi</p>
@@ -43,8 +78,8 @@
                             <h1>Hola, soy <span class="nombre">Melina Frias</span></h1>
                             <p>Soy Diseñadora y Desarrolladora full stack jr. Descubrí mi  pasión por el desarrollo web cuando tuve mi primer página web como Diseñadora de Indumentaria y quería mejorar tanto su aspecto como el rendimiento. De alli comencé a capacitarme en la programación para poder ayudar a otras personas y que puedan llevar a cabo sus proyectos.</p>
                         </div>
-                        <div class="column"></div>
-                        <div class="caja-experiencia"> <!--Años de experiencia-->
+                        <div class="column is-1"></div>
+                        <div class="column is-3 caja-experiencia"> <!--Años de experiencia-->
                             <div class="circulo">
                                 <p class="años">1</p>
                             </div>  
@@ -71,13 +106,13 @@
                 
             </section> <!--Termina seccion 2 -->
 
-            <section id="servicios" class="servicios"> <!-- Empieza seccion 3 --> 
+            <section id="servicios" class="section servicios"> <!-- Empieza seccion 3 --> 
                 <div class="container contenedor-gral" style="width: 80%">
                     <div class="nombre-seccion">
                         <p>Servicios</p>
                         <h2 class="subtitulo">Cómo puedo ayudar en tu próximo proyecto</h2>
                     </div>
-                    <div class="columns padre"> <!--Empieza div padre-->
+                    <div class="columns is-multiline padre"> <!--Empieza div padre-->
                         <div class="column is-4-desktop is-full-tablet is-full-mobile caja"> <!--Empieza div 1-->
                             <i class="bi bi-pencil-square"></i>
                             <h3>Diseño Gráfico</h3>
@@ -127,8 +162,8 @@
                 </div>
             </section> <!--Termina seccion 3 -->
 
-            <section id="resumen" class="resumen"> <!-- Empieza seccion 4 -->
-                <div class="container contenedor-gral" style="width: 80%">
+            <section id="resumen" class="section resumen"> <!-- Empieza seccion 4 -->
+                <div class="container contenedor-gral">
                     <div class="nombre-seccion">
                         <p>Resumen</p>
                         <h2 class="subtitulo">Un resumen de mi curriculum</h2>
@@ -137,44 +172,44 @@
                     <div class="columns is-multiline padre-resumen">
                         <div class="column is-half-desktop is-full-tablet resumen-educacion">
                             <h1>Mi Educación</h1>
-                            <div class="columns is-half- is-full-desktop is-full-tablet box-resumen">
-                                <div class="column is-full caja-educacion">
+                            <div class="columns is-half is-full-desktop is-full-tablet box-resumen">
+                                <div class="column is-11-desktop is-full-tablet caja-educacion">
                                     <h3>Diplomatura en Programación Web Full Stack</h3>
                                     <p class="instituto">Universidad Tecnológica Nacional / 2022 - actual</p>
                                     <p>HTML. CSS. Bootstrap. GitHub. JavaScript. React. Typescript. NodeJS. Manejo de bases de datos para web.</p>
                                 </div>
                                 
-                                <div class="column is-full-tablet caja-educacion">
+                                <div class="column is-11-desktop is-full-tablet caja-educacion">
                                     <h3>Curso Marketing Digital</h3>
                                     <p class="instituto">Udemy / Enero 2022 - Abril 2022</p>
                                     <p>Identidad de marca. Sitios web. Email Marketing. Blogging. Google Ads. Redes sociales. Podcasting. Linkedin.</p>
                                 </div>
                                 
-                                <div class="column is-full-tablet caja-educacion">
+                                <div class="column is-11-desktop is-full-tablet caja-educacion">
                                     <h3>Diseñadora y Técnica Sustentable</h3>
                                     <p class="instituto">Escuela Argentina de Moda / Abril 2021 - Diciembre 2021</p>
                                     <p>Tendencias de moda Sustentable. Ilustración de moda. Mkt de moda. Ténicas de producción. Moldería de autor. Experimentación textil.</p>
                                 </div>
                                 
-                                <div class="column is-full-tablet caja-educacion">
+                                <div class="column is-11-desktop is-full-tablet caja-educacion">
                                     <h3>Curso sobre Adobe Illustrator</h3>
                                     <p class="instituto">Udemy / Agosto 2020 - Febrero 2021</p>
                                     <p>Efecto 3D. Técnicas de Ilustración. Luces y sombras. Vectorizar imágenes. Motivos.</p>
                                 </div>
                                 
-                                <div class="column is-full-tablet caja-educacion">
+                                <div class="column is-11-desktop is-full-tablet caja-educacion">
                                     <h3>Curso de Marketing en el Negocio de la Moda</h3>
                                     <p class="instituto">Capacitarte UBA / Septiembre 2020 - Octubre 2020</p>
                                     <p>FODA. Marketing mix. Tipos de tienda. Posicionamiento. Tipos de público.</p>
                                 </div>
                                 
-                                <div class="column is-full-tablet caja-educacion">
+                                <div class="column is-11-desktop is-full-tablet caja-educacion">
                                     <h3>Licenciatura en Diseño de Indumentaria</h3>
                                     <p class="instituto">Universidad de Morón / Marzo 2017 - Dieciembre 2020</p>
                                     <p>Producción de moda. Estampados digitales. Sastrería. Molderia convencional y Digital. Técnicas de producción. Gráfica. Diseño de Indumentaria y accesorios. Psicología social de la moda. Comercialización.</p>
                                 </div>
                                 
-                                <div class="column is-full-tablet caja-educacion">
+                                <div class="column is-11-desktop is-full-tablet caja-educacion">
                                     <h3>Bachiller con Orientación en Ciencias Naturales</h3>
                                     <p class="instituto">Instituto Juan XXIII / Marzo 2011 - Diciembre 2016</p>
                                     <p>Manejo dentro de un laboratorio Quimico. Genes dominantes y recesivos. Fisica. Quimica. Biofisica. Ciencias de la tierra. </p>
@@ -194,51 +229,41 @@
                             </div>
                         </div>
                     </div> <!--Termina padre-resumen -->
-
                     
                     
-                    <div class="column is-full-desktop is-full-tablet habilidades"> <!--empieza mis habilidades -->
-                        <h1>Mis habilidades</h1>
-                        <div class="columns is-multiline padre-habilidades">
-
-                            <div class="columns is-half-desktop is-full-tablet contenedor-habilidades">
-
+                    
+                    <div class="habilidades">
+                        <h1>Mis Habilidades</h1>
+                        <div class="columns is-full-desktop is-full-tablet padre-habilidades">
+                            <div class="column is-half-desktop contenedor-habilidades">
                                 <div class="column box-habilidades">
-                                    <p>Diseño Web <span class="porcentaje">80%</span></p>
+                                    <p>Diseño Web <span class="porcentaje">95%</span></p>
                                     <div class="contenedor-hr">
                                         <hr class="diseño-web">
                                     </div>
                                 </div>
                                 <div class="column box-habilidades">
-                                    <p>HTML/CSS <span class="porcentaje">85%</span></p>
+                                    <p>HTML/CSS <span class="porcentaje">90%</span></p>
                                     <div class="contenedor-hr">
                                         <hr class="html-css">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="columns is-half-desktop is-full-tablet contenedor-habilidades">
-                            
                                 <div class="column box-habilidades">
-                                    <p>JavaScript<span class="porcentaje">50%</span></p>
+                                    <p>JavaScript<span class="porcentaje">70%</span></p>
                                     <div class="contenedor-hr">
                                         <hr class="javascript">
                                     </div>
                                 </div>
+                            </div>
+                            <div class="column is-half-desktop">
                                 <div class="column box-habilidades">
-                                    <p>React JS <span class="porcentaje">95%</span></p>
+                                    <p>React JS <span class="porcentaje">90%</span></p>
                                     <div class="contenedor-hr">
                                         <hr class="react">
                                     </div>
                                 </div>
-                                
-                                
-                           
-                            </div>
-                            <div class="columns is-half-desktop is-full-tablet contenedor-habilidades">
-                        
-                                
                                 <div class="column box-habilidades">
-                                    <p>Angular Js <span class="porcentaje">60%</span></p>
+                                    <p>Angular Js <span class="porcentaje">50%</span></p>
                                     <div class="contenedor-hr">
                                         <hr class="angular">
                                     </div>
@@ -249,9 +274,11 @@
                                         <hr class="bootstrap">
                                     </div>
                                 </div>
-                                
-                            </div> <!--Termina contenedor habilidades-->
-                        </div> <!--Termina padre habilidades -->
+                            </div>  <!-- Finaliza div column, contiene 3 div -->
+                        </div> <!-- Finaliza padre habilidades -->
+                        
+                    </div>    <!-- Finaliza habilidades -->
+
 
                     <div class="boton-enviar">
                         <a download="Cv-Frias-Melina" href="archivos/cv-frias-melina.pdf" target="_blank" class="download-btn">Descargar CV</a>
@@ -261,7 +288,7 @@
 
             </section> <!--Termina seccion 4 -->
 
-            <section id="portfolio" class="portfolio"> <!--empieza seccion 5 portfolio -->
+            <section id="portfolio" class="section portfolio"> <!--empieza seccion 5 portfolio -->
                 <div class="container contenedor-gral">
                     <div class="nombre-seccion">
                         <p>Portfolio</p>
@@ -270,66 +297,80 @@
                     <div class="contenedor-nav-portfolio">
                         <div class="nav-portfolio">
                             <a href="#todo">Todo</a>
-                            <a href="#detallada">Detallada</a>
-                            <a href="#maquetas">Maquetas</a>
-                            <a href="#videos-youtube">Videos de Youtube</a>
-                            <a href="#videos-vimeo">Videos de Vimeo</a>
+                            <a href="#herramientasDigitales">Herramientas Digitales</a>
+                            <a href="#indumentaria">Indumentaria sin Desperdicio</a>
+                            <a href="#tenidoNatural">Teñido Natural</a>
+                            <a href="#disenioWeb">Diseño Web</a>
                        </div>
+                       <i class="bi bi-list hamburguesa-portfolio"></i></a>
                     </div>
                     <!--empieza galeria de img -->
                     
-                    <div id="todo" class="columns is-multiline contenedor-img">
-                        <div class="column is-4-desktop is-full-tablet box-img" id="maquetas">
-                            <img class="img-portfolio" src="assets/imagenes/cuerpo-naturaleza.jpg" alt="cuerpo-naturaleza">
-                            <div class="descripcion-img">
-                                <i class="bi bi-columns-gap icono-img"></i>
-                                <h3>Maquetas</h3>
-                                <p>Categoria</p>
+                    <div id="todo" class="columns  is-multiline is-full contenedor-img">
+                       
+                        <div class="caja-img column  is-4-desktop is-full-tablet is-full-mobile" id="heramientasDigitales">
+                            <div class="container-imagen">
+                                <img class="img-portfolio" src="assets/imagenes/EstampaDigital.png" alt="Estampa-Digital">
+                                <div class="descripcion-img overlay">
+                                    <i class="bi bi-columns-gap icono-img"></i>
+                                    <h3>Estampado Digital</h3>
+                                    <p>Categoria</p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="column is-4-desktop is-full-tablet box-img" id="maquetas">
-                            <img class="img-portfolio" src="assets/imagenes/fragmentos.jpg" alt="fragmentos">
-                            <div class="descripcion-img">
-                                <i class="bi bi-columns-gap icono-img"></i>
-                                <h3>Maquetas</h3>
-                                <p>Categoria</p>
+                        <div class="caja-img column is-4-desktop is-full-tablet is-full-mobile" id="indumentaria">
+                            <div class="container-imagen">
+                                <img class="img-portfolio" src="assets/imagenes/Indumentaria-sin-desperdicio.jpg" alt="Indumentaria-sin-desperdicio">
+                                <div class="descripcion-img overlay">
+                                    <i class="bi bi-image icono-img"></i>
+                                    <h3>Indumentaria sin Desperdicio</h3>
+                                    <p>Categoria</p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="column is-4-desktop is-full-tablet box-img" id="detallada">
-                            <img class="img-portfolio" src="assets/imagenes/textura-natural.jpg" alt="textura-natural">
-                            <div class="descripcion-img">
-                                <i class="bi bi-image icono-img"></i>
-                                <h3>Detallada</h3>
-                                <p>Categoria</p>
+                        <div class="caja-img column is-4-desktop is-full-tablet is-full-mobile" id="disenioWeb">
+                            <div class="container-imagen">
+                                <img class="img-portfolio" src="assets/imagenes/descarga.png" alt="Desarrollo-web">
+                                <div class="descripcion-img overlay">
+                                    <i class="bi bi-columns-gap icono-img"></i>
+                                    <h3>Diseño Web</h3>
+                                    <p>Categoria</p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="column is-4-desktop is-full-tablet box-img" id="videos-youtube">
-                            <img class="img-portfolio" src="assets/imagenes/brote-natural.jpg" alt="brote-natural">
-                            <div class="descripcion-img">
-                                <i class="bi bi-camera-video icono-img"></i>
-                                <h3>Video de Youtube</h3>
-                                <p>Categoria</p>
+                        <div class="caja-img column is-4-desktop is-full-tablet is-full-mobile" id="herramientasDigitales">
+                            <div class="container-imagen">
+                                <img class="img-portfolio" src="assets/imagenes/Figurines-Digitales.png" alt="Figurines-Digitales">
+                                <div class="descripcion-img overlay">
+                                    <i class="bi bi-columns-gap icono-img"></i>
+                                    <h3>Herramientas Digitales</h3>
+                                    <p>Categoria</p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="column is-4-desktop is-full-tablet box-img" id="videos-vimeo">
-                            <img class="img-portfolio" src="assets/imagenes/experimental.jpg" alt="experimental">
-                            <div class="descripcion-img">
-                                <i class="bi bi-camera-video icono-img"></i>
-                                <h3>Video de Vimeo</h3>
-                                <p>Categoria</p>
+                        <div class="caja-img column is-4-desktop is-full-tablet is-full-mobile" id="tenidoNatural">
+                            <div class="container-imagen">
+                                <img class="img-portfolio" src="assets/imagenes/Teñido-Natural.jpg" alt="teñido-natural">
+                                <div class="descripcion-img overlay">
+                                    <i class="bi bi-image icono-img"></i>
+                                    <h3>Teñido Natural</h3>
+                                    <p>Categoria</p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="column is-4-desktop is-full-tablet box-img" id="detallada">
-                            <img class="img-portfolio" src="assets/imagenes/naturaleza.jpg" alt="naturaleza">
-                            <div class="descripcion-img">
-                                <i class="bi bi-image icono-img"></i>
-                                <h3>Detallada</h3>
-                                <p>Categoria</p>
+                        <div class="caja-img column is-4-desktop is-full-tablet is-full-mobile" id="disenioWeb">
+                            <div class="container-imagen">
+                                <img class="img-portfolio" src="assets/imagenes/disenio-web.png" alt="diseño-web">
+                                <div class="descripcion-img overlay">
+                                    <i class="bi bi-columns-gap icono-img"></i>
+                                    <h3>Diseño Web</h3>
+                                    <p>Categoria</p>
+                                </div>
                             </div>
                         </div>
                     </div>           
@@ -340,10 +381,10 @@
             
     </main> <!--Termina main -->
 
-    <footer id="contacto">  <!--Empieza footer -->
+    <footer id="contacto" class="section">  <!--Empieza footer -->
         <div class="container">
             <div class="columns is-multiline contenedor-footer">
-                <div class="column is-half-desktop is-full-tablet contenedor-contacto">
+                <div class="column is-half-desktop is-full-tablet is-full-mobile contenedor-contacto">
                     <h1>Estemos en contacto</h1>
                     <p>Disfruto discutir nuevos proyectos y desafíos de diseño. Comparta tanta información como sea posible para que podamos aprovechar al máximo nuestra primera puesta al día.</p>
                     <h3>Viviendo en:</h3>
@@ -357,17 +398,22 @@
                         <a href="https://github.com/melina-frias" target="_blank"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
-                <div class="column is-half-desktop is-full-tablet formulario-footer">
+                <div class="column is-half-desktop is-full-tablet is-full-mobile formulario-footer">
                     <h1>¿Estimar tu proyecto?</h1>      
                     <div class="form-contacto">
-                        <label class="label">Cuál es tu nombre:</label>
-                        <input type="text" name="nombre" id="nombre">
-                        
-                        <label class="label">Tu dirección de correo electrónico:</label>
-                        <input type="email" name="correo" id="correo" >
+                        <form action="https://formspree.io/f/xdovgazz"
+                        method="POST">
+                            <label class="label">Cuál es tu nombre:</label>
+                            <input type="text" name="nombre" id="nombre">
+                            
+                            <label class="label">Tu dirección de correo electrónico:</label>
+                            <input type="email" name="correo" id="correo" >
 
-                        <label class="label" for="mensaje">Cómo puedo ayudarte:</label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                            <label class="label" for="mensaje">Cómo puedo ayudarte:</label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+                            <button type="submit" class="enviar-formulario">Enviar<i class="bi bi-arrow-right"></i></button>
+                        </form>
                     </div>              
                 </div>
             </div>

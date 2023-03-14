@@ -667,20 +667,21 @@ html{
     width: 75%;
 }
 
-.boton-enviar{
+.btn-descargar-cv{
     display: flex;
     justify-content: center;
     margin: 5rem 0;
+    height: 55px;
 }
 
 
-.boton-enviar a{
+.btn-descargar-cv a{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     font-weight: normal;
 }
 
-.download-btn{
+.download-btn-cv{
     background-color: var(--colorFondo);
     color: var(--texto);
     border: 1px solid var(--texto);
@@ -688,7 +689,7 @@ html{
     text-decoration: none;
 }
 
-.download-btn:hover{
+.download-btn-cv:hover{
     background-color: var(--texto);
     color: var(--colorFondo);
     border: 1 px solid var(--texto);
@@ -832,6 +833,14 @@ html{
     }
     .portfolio .subtitulo{
         padding-bottom: 1rem
+    }
+
+    .caja-img{
+        display: flex;
+        justify-content: center;
+    }
+    .container-imagen{
+        width: 80%;
     }
 }
 /*empieza footer*/ 

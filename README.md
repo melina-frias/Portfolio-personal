@@ -1,4 +1,4 @@
-Link: https://github.com/melina-frias/Portfolio-personal
+Link: https://melina-frias.github.io/Portfolio-personal/
 # Portfolio Frias Melina
 
 ## Introducción
